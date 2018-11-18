@@ -16,7 +16,13 @@
     <script src="semantic/dist/components/form.js"></script>
     <script src="semantic/dist/components/tab.js"></script>
     <script>
-        $('.menu .item').tab();
+        // $('.item').click(function(){
+        //     $('.active').removeClass('active');
+        //     $(this).addClass('active');
+        // });
+        $(document).ready(function(){
+            $('.menu .item').tab();
+        });
     </script>
 </head>
 
@@ -67,54 +73,180 @@
         <!-- Beginning of tab menu-->
         <div>
             <div class="ui top attached tabular menu" style="display: flex; margin-top: 0;">
-                <a class="active item" data-tab="Home" style="background-color:  #00aeef; color: white; flex: auto;">Home</a>
+                <a class="active item" data-tab="Home" style="background-color:  #00aeef; color: white; flex: auto; border-right-color: white; font-size: 1.2em;">Home</a>
                 <a class="item" data-tab="Online Trading" style="background-color:  #00aeef; color: white; flex: auto; border-right-color: white; font-size: 1.2em;">Online Trading</a>
                 <a class="item" data-tab="Online Brokerage" style="background-color:  #00aeef; color: white; flex: auto; border-right-color: white; font-size: 1.2em;">Online Brokerage</a>
                 <a class="item" data-tab="Investment Products" style="background-color:  #00aeef; color: white; flex: auto; border-right-color: white; font-size: 1.2em;">Investment Products</a>
                 <a class="item" data-tab="TP Services" style="background-color:  #00aeef; color: white; flex: auto; border-right-color: white; font-size: 1.2em;">TP Services</a>
                 <a class="item" data-tab="Contact Us" style="background-color:  #00aeef; color: white; flex: auto; font-size: 1.2em;">Contact Us</a>
             </div>
-            <div class="ui bottom attached active tab segment" data-tab="Home" style="background-color:  #00aeef; color: white; display: flex; justify-content: space-between">
-                <div>
-                    <img src="assets/WAD-NA-Extra-images/quote.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
-                    <p style="float: right; font-weight: bold;">Fusce <br> ultrices </p>          
-                </div>
-                <div>
-                    <img src="assets/WAD-NA-Extra-images/phone.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
-                    <p style="float: right; font-weight: bold;">Aliquam <br> tempus </p>    
-                </div>
-                <div>        
-                    <img src="assets/WAD-NA-Extra-images/window.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
-                    <p style="float: right; font-weight: bold;">Proin <br> aliquam </p>  
-                </div>
-                <div>     
-                    <img src="assets/WAD-NA-Extra-images/threeboxes.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
-                    <p style="float: right; font-weight: bold;">Nunc <br> sapien </p>  
-                </div>
-                <div> 
-                    <img src="assets/WAD-NA-Extra-images/money.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
-                    <p style="float: right; font-weight: bold;">Mauris <br> iaculis </p>  
-                </div>
-                <div> 
-                    <img src="assets/WAD-NA-Extra-images/creditcard.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
-                    <p style="float: right; font-weight: bold;">Morbi <br> rutrum </p>  
-                </div>    
+            <div class="ui bottom attached active tab segment" data-tab="Home" style="background-color:  #00aeef; color: white; ">
+                <div style="display: flex; justify-content: space-between">
+                    <div>
+                        <img src="assets/WAD-NA-Extra-images/quote.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Fusce <br> ultrices </p>          
+                    </div>
+                    <div>
+                        <img src="assets/WAD-NA-Extra-images/phone.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Aliquam <br> tempus </p>    
+                    </div>
+                    <div>        
+                        <img src="assets/WAD-NA-Extra-images/window.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Proin <br> aliquam </p>  
+                    </div>
+                    <div>     
+                        <img src="assets/WAD-NA-Extra-images/threeboxes.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Nunc <br> sapien </p>  
+                    </div>
+                    <div> 
+                        <img src="assets/WAD-NA-Extra-images/money.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Mauris <br> iaculis </p>  
+                    </div>
+                    <div> 
+                        <img src="assets/WAD-NA-Extra-images/creditcard.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Morbi <br> rutrum </p>  
+                    </div> 
+                </div>   
             </div>
-
             <div class="ui bottom attached tab segment" data-tab="Online Trading" style="background-color:  #00aeef; color: white;">
-                Online Trading
+                <div style="display: flex; justify-content: space-between">
+                    <div>
+                        <img src="assets/WAD-NA-Extra-images/quote.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Fusce <br> ultrices </p>          
+                    </div>
+                    <div>
+                        <img src="assets/WAD-NA-Extra-images/quote.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Aliquam <br> tempus </p>    
+                    </div>
+                    <div>        
+                        <img src="assets/WAD-NA-Extra-images/quote.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Proin <br> aliquam </p>  
+                    </div>
+                    <div>     
+                        <img src="assets/WAD-NA-Extra-images/quote.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Nunc <br> sapien </p>  
+                    </div>
+                    <div> 
+                        <img src="assets/WAD-NA-Extra-images/quote.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Mauris <br> iaculis </p>  
+                    </div>
+                    <div> 
+                        <img src="assets/WAD-NA-Extra-images/quote.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Morbi <br> rutrum </p>  
+                    </div> 
+                </div>   
             </div>
             <div class="ui bottom attached tab segment" data-tab="Online Brokerage" style="background-color:  #00aeef; color: white;">
-                Online Brokerage
+                <div style="display: flex; justify-content: space-between">
+                    <div>
+                        <img src="assets/WAD-NA-Extra-images/phone.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Fusce <br> ultrices </p>          
+                    </div>
+                    <div>
+                        <img src="assets/WAD-NA-Extra-images/phone.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Aliquam <br> tempus </p>    
+                    </div>
+                    <div>        
+                        <img src="assets/WAD-NA-Extra-images/phone.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Proin <br> aliquam </p>  
+                    </div>
+                    <div>     
+                        <img src="assets/WAD-NA-Extra-images/phone.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Nunc <br> sapien </p>  
+                    </div>
+                    <div> 
+                        <img src="assets/WAD-NA-Extra-images/phone.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Mauris <br> iaculis </p>  
+                    </div>
+                    <div> 
+                        <img src="assets/WAD-NA-Extra-images/phone.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Morbi <br> rutrum </p>  
+                    </div> 
+                </div>   
             </div>
             <div class="ui bottom attached tab segment" data-tab="Investment Products" style="background-color:  #00aeef; color: white;">
-                Investment Products
+                <div style="display: flex; justify-content: space-between">
+                    <div>
+                        <img src="assets/WAD-NA-Extra-images/money.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Fusce <br> ultrices </p>          
+                    </div>
+                    <div>
+                        <img src="assets/WAD-NA-Extra-images/money.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Aliquam <br> tempus </p>    
+                    </div>
+                    <div>        
+                        <img src="assets/WAD-NA-Extra-images/money.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Proin <br> aliquam </p>  
+                    </div>
+                    <div>     
+                        <img src="assets/WAD-NA-Extra-images/money.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Nunc <br> sapien </p>  
+                    </div>
+                    <div> 
+                        <img src="assets/WAD-NA-Extra-images/money.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Mauris <br> iaculis </p>  
+                    </div>
+                    <div> 
+                        <img src="assets/WAD-NA-Extra-images/money.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Morbi <br> rutrum </p>  
+                    </div> 
+                </div>   
             </div>
             <div class="ui bottom attached tab segment" data-tab="TP Services" style="background-color:  #00aeef; color: white;">
-                TP Services
+                <div style="display: flex; justify-content: space-between">
+                    <div>
+                        <img src="assets/WAD-NA-Extra-images/creditcard.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Fusce <br> ultrices </p>          
+                    </div>
+                    <div>
+                        <img src="assets/WAD-NA-Extra-images/creditcard.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Aliquam <br> tempus </p>    
+                    </div>
+                    <div>        
+                        <img src="assets/WAD-NA-Extra-images/creditcard.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Proin <br> aliquam </p>  
+                    </div>
+                    <div>     
+                        <img src="assets/WAD-NA-Extra-images/creditcard.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Nunc <br> sapien </p>  
+                    </div>
+                    <div> 
+                        <img src="assets/WAD-NA-Extra-images/creditcard.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Mauris <br> iaculis </p>  
+                    </div>
+                    <div> 
+                        <img src="assets/WAD-NA-Extra-images/creditcard.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Morbi <br> rutrum </p>  
+                    </div> 
+                </div>   
             </div>
             <div class="ui bottom attached tab segment" data-tab="Contact Us" style="background-color:  #00aeef; color: white;">
-                Contact Us
+                <div style="display: flex; justify-content: space-between">
+                    <div>
+                        <img src="assets/WAD-NA-Extra-images/threeboxes.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Fusce <br> ultrices </p>          
+                    </div>
+                    <div>
+                        <img src="assets/WAD-NA-Extra-images/threeboxes.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Aliquam <br> tempus </p>    
+                    </div>
+                    <div>        
+                        <img src="assets/WAD-NA-Extra-images/threeboxes.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Proin <br> aliquam </p>  
+                    </div>
+                    <div>     
+                        <img src="assets/WAD-NA-Extra-images/threeboxes.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Nunc <br> sapien </p>  
+                    </div>
+                    <div> 
+                        <img src="assets/WAD-NA-Extra-images/threeboxes.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Mauris <br> iaculis </p>  
+                    </div>
+                    <div> 
+                        <img src="assets/WAD-NA-Extra-images/threeboxes.png" class="ui image" style="float:left; padding-right: 10px; width: 50px; height:auto">
+                        <p style="float: right; font-weight: bold;">Morbi <br> rutrum </p>  
+                    </div> 
+                </div>   
             </div>
         </div>
         <!-- End of tab menu--> 
