@@ -4,12 +4,17 @@
     <title>Project Semanctic</title>
     
     <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.css">
     <script
         src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
         crossorigin="anonymous">
     </script>
+    <script src="semantic/dist/semantic.js"></script>
     <script src="semantic/dist/semantic.min.js"></script>
+    <script src="semantic/javascript/validate.js"></script>
+    <script src="semantic/dist/components/form.js"></script>
+    <script src="semantic/dist/components/tab.js"></script>
 </head>
 
 <body cz-shortcut-listen="true">
@@ -87,15 +92,15 @@
                                 <div class="field">
                                     <div class="ui left icon input">
                                         <i class="lock icon"></i>
-                                        <input type="password" name="confirmPassword" placeholder="Confirm your Password">
+                                        <input type="password" name="password" placeholder="Confirm your Password">
                                     </div>
                                 </div>
                             </div>    
                             
                             <div class="ui basic segment"style="margin: 0; padding: 0 14px 0 14px">
-                                <div class="field">
+                                <div class="inline field">
                                     <div class="ui checkbox" style="padding-top: 12.5px">
-                                        <input type="checkbox" tabindex="0" class="hidden">
+                                        <input type="checkbox" name="terms">
                                         <label>
                                             I accept <a href="#">TP's terms and conditions</a>
                                          </label>
